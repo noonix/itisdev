@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF">
+
+    <!-- how active are you -->
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="75dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="How active are you?"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+    <!-- subtext -->
+    <TextView
+        android:id="@+id/subtext"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/question_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="23dp"
+        android:text="A sedentary person burns fewer calories than an active person"
+        android:textAlignment="center"
+        android:textColor="#4a5759"
+        android:textSize="14sp" />
+    <!-- sedentary -->
+    <TextView
+        android:id="@+id/sedentary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subtext"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="58dp"
+        android:fontFamily="sans-serif"
+        android:paddingHorizontal="100dp"
+        android:paddingVertical="15dp"
+        android:text="Sedentary"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+    <!-- low active -->
+    <TextView
+        android:id="@+id/low_active_text"
+        android:layout_width="309dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/sedentary_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="sans-serif"
+        android:paddingHorizontal="100dp"
+        android:paddingVertical="15dp"
+        android:text="Low Active"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+    <!-- active -->
+    <TextView
+        android:id="@+id/active_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/low_active_text"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="77dp"
+        android:fontFamily="sans-serif"
+        android:paddingHorizontal="100dp"
+        android:paddingVertical="15dp"
+        android:text="Active"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+    <!-- very active -->
+    <TextView
+        android:id="@+id/very_active_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/active_text"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="49dp"
+        android:fontFamily="sans-serif"
+        android:paddingHorizontal="100dp"
+        android:paddingVertical="15dp"
+        android:text="Very Active"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+    <!-- proceed -->
+    <ImageButton
+        android:id="@+id/proceed_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="98dp"
+        android:background="@drawable/ellipse"
+        android:elevation="6dp"
+        android:src="@drawable/next_arrow" />
+    <!-- back -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="115dp"
+        android:padding="5dp"
+        android:text="Back"
+        android:textColor="#4a5759" />
+    <!-- app title -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="50dp"
+        app:srcCompat="@drawable/vitalsync" />
+
+</RelativeLayout>
