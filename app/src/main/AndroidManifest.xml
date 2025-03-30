@@ -13,6 +13,21 @@
         android:theme="@style/Theme.Vitalsync"
         tools:targetApi="31">
         <activity
+            android:name=".CalorieIntakeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivenessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeightgoalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -21,6 +36,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
