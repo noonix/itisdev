@@ -1,3 +1,4 @@
+package com.example.vitalsync;
 
 import android.os.Bundle;
 import androidx.activity.EdgeToEdge;
@@ -34,3 +35,4 @@ public class Homepage extends AppCompatActivity {
         }
     }
 }
+

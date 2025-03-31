@@ -1,3 +1,4 @@
+package com.example.vitalsync;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -71,3 +72,4 @@ public class CircularProgressBar extends View {
         invalidate();
     }
 }
+

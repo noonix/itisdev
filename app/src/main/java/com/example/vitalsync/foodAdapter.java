@@ -1,3 +1,4 @@
+package com.example.vitalsync;
 
 import android.app.MediaRouteButton;
 import android.content.Context;

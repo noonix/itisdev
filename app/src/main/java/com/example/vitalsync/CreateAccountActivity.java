@@ -1,3 +1,5 @@
+package com.example.vitalsync;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
