@@ -317,8 +317,8 @@ public class DBHelper extends SQLiteOpenHelper {
                 double mealFats = mealsCursor.getDouble(mealsCursor.getColumnIndex(COLUMN_TOTAL_FATS));
                 double mealCarbs = mealsCursor.getDouble(mealsCursor.getColumnIndex(COLUMN_TOTAL_CARBS));
 
-                Log.d("DatabaseDump", "Meal - ID: " + mealId + ", Username: " + username +
-                        ", Date: " + date + ", Time: " + mealTime + ", Meal Name: " + mealName +
+                Log.d("DatabaseDump", "Meal.java - ID: " + mealId + ", Username: " + username +
+                        ", Date: " + date + ", Time: " + mealTime + ", Meal.java Name: " + mealName +
                         ", Calories: " + mealCalories + ", Proteins: " + mealProteins +
                         ", Fats: " + mealFats + ", Carbs: " + mealCarbs);
             } while (mealsCursor.moveToNext());
@@ -336,7 +336,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 double foodFats = foodsCursor.getDouble(foodsCursor.getColumnIndex(COLUMN_FATS));
                 double foodCarbs = foodsCursor.getDouble(foodsCursor.getColumnIndex(COLUMN_CARBS));
 
-                Log.d("DatabaseDump", "Food - ID: " + foodId + ", Meal ID: " + mealId +
+                Log.d("DatabaseDump", "Food - ID: " + foodId + ", Meal.java ID: " + mealId +
                         ", Food Name: " + foodName + ", Calories: " + foodCalories +
                         ", Proteins: " + foodProteins + ", Fats: " + foodFats +
                         ", Carbs: " + foodCarbs);

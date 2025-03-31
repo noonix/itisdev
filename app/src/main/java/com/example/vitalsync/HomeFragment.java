@@ -440,8 +440,8 @@ public class HomeFragment extends Fragment implements MealAdapter.OnMealClickLis
             intent.putExtra("CURRENT_DATE", currentDate);
             mealInputLauncher.launch(intent);
         } else {
-            Log.e("HomeFragment", "Meal not found in mealList. Position invalid.");
-            Toast.makeText(getContext(), "Error: Meal not found", Toast.LENGTH_SHORT).show();
+            Log.e("HomeFragment", "Meal.java not found in mealList. Position invalid.");
+            Toast.makeText(getContext(), "Error: Meal.java not found", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -449,7 +449,7 @@ public class HomeFragment extends Fragment implements MealAdapter.OnMealClickLis
     @Override
     public void onMealLongClick(int position) {
         new AlertDialog.Builder(getContext())
-                .setTitle("Delete Meal")
+                .setTitle("Delete Meal.java")
                 .setMessage("Are you sure you want to delete this meal?")
                 .setPositiveButton("Yes", (dialog, which) -> {
                     Meal mealToDelete = mealList.get(position);
