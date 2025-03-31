@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "494363506111",
+    "project_id": "vitalsyncdb",
+    "storage_bucket": "vitalsyncdb.firebasestorage.app",
+    "database_url": "https://vitalsyncdb-default-rtdb.asia-southeast1.firebasedatabase.app/"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494363506111:android:27010b56cdbd9536d75d0a",
+        "android_client_info": {
+          "package_name": "com.example.vitalsync"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494363506111-vg8s3nvmgqk3s4c19o1ic1dl0o4r399s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtlnaXtRocbRK0TXTdgt4TvXuaFM0t_T4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "494363506111-vg8s3nvmgqk3s4c19o1ic1dl0o4r399s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

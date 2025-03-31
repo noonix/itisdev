@@ -134,9 +134,9 @@ public class PFCActivity extends AppCompatActivity {
     private double calculateTDEE(int age, double weightKg, int heightCm, String gender, String activityLevel) {
         double BMR;
 
-        if (gender.equals("male")) {
+        if (gender.equalsIgnoreCase("male")) {
             BMR = (10 * weightKg) + (6.25 * heightCm) - (5 * age) + 5;
-        } else if (gender.equals("female")) {
+        } else if (gender.equalsIgnoreCase("female")) {
             BMR = (10 * weightKg) + (6.25 * heightCm) - (5 * age) - 161;
         } else {
             throw new IllegalArgumentException("Invalid gender value: " + gender);
