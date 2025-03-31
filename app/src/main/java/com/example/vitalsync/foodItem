@@ -1,3 +1,5 @@
+package com.example.vitalsync;
+
 public class foodItem {
     private String name;
     private float calories;

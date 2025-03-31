@@ -1,3 +1,4 @@
+package com.example.vitalsync;
 
 public class NutrientData {
     private float proteins;
