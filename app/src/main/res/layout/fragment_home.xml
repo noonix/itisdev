@@ -25,6 +25,7 @@
                 android:gravity="top"
                 android:lineSpacingExtra="0sp"
                 android:text="User"
+                android:textStyle="bold"
                 android:textAppearance="@style/itami"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -32,7 +33,7 @@
 
             <TextView
                 android:id="@+id/date"
-                android:layout_width="140dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="200dp"
                 android:layout_marginTop="62dp"
@@ -46,14 +47,15 @@
 
             <TextView
                 android:id="@+id/nutrients_i"
-                android:layout_width="122dp"
+                android:layout_width="271dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="133dp"
+                android:layout_marginTop="123dp"
                 android:gravity="left|top"
                 android:lineSpacingExtra="0sp"
                 android:text="@string/nutrients_i"
                 android:textAppearance="@style/nutrients_i"
+                android:textSize="19sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/itami" />
@@ -233,19 +235,22 @@
 
             <TextView
                 android:id="@+id/tv_water_intak"
-                android:layout_width="106dp"
-                android:layout_height="15dp"
+                android:layout_width="125dp"
+                android:layout_height="25dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="323dp"
+                android:layout_marginTop="315dp"
                 android:gravity="left|top"
                 android:textStyle="bold"
                 android:lineSpacingExtra="0sp"
                 android:text="@string/water_intak"
+                android:textSize="19sp"
                 android:textAppearance="@style/water_intak"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:elevation="10dp" />
+
 
             <RelativeLayout
                 android:id="@+id/water_box"
@@ -398,6 +403,7 @@
                 android:textStyle="bold"
                 android:lineSpacingExtra="0sp"
                 android:text="Meals"
+                android:textSize="19sp"
                 android:textAppearance="@style/water_intak"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

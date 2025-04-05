@@ -1,11 +1,10 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
-    android:padding="16dp">
+    android:background="#FFF8F5"
+    android:padding="24dp">
 
-    <!-- back button -->
+    <!-- Back Button -->
     <ImageView
         android:id="@+id/back_button"
         android:layout_width="24dp"
@@ -13,75 +12,88 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="16dp"
         android:src="@drawable/ic_back"
-        android:contentDescription="Back"/>
+        android:contentDescription="Back" />
 
+    <!-- Title -->
     <TextView
         android:id="@+id/signin_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="111dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:text="Create Account"
-        android:textColor="@android:color/black"
+        android:textColor="#2b2d42"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:fontFamily="@font/poppins_bold" />
 
-    <EditText
-        android:id="@+id/username_input"
+    <!-- Card Container for Input Fields -->
+    <LinearLayout
+        android:id="@+id/input_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/signin_title"
-        android:layout_marginTop="180dp"
-        android:hint="Username"
-        android:inputType="textPersonName"
-        android:drawableStart="@drawable/usericon"
-        android:drawablePadding="12dp"
-        android:padding="16dp"
-        android:textColor="@android:color/black"
-        android:textSize="16sp"/>
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:elevation="6dp">
 
-    <!-- email input -->
-    <EditText
-        android:id="@+id/email_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/username_input"
-        android:layout_marginTop="20dp"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:drawableStart="@drawable/ic_email"
-        android:drawablePadding="12dp"
-        android:padding="16dp"
-        android:textColor="@android:color/black"
-        android:textSize="16sp"/>
+        <!-- Username -->
+        <EditText
+            android:id="@+id/username_input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Username"
+            android:drawableStart="@drawable/usericon"
+            android:drawablePadding="12dp"
+            android:background="@android:color/transparent"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
 
-    <!-- password input -->
-    <EditText
-        android:id="@+id/password_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/email_input"
-        android:layout_marginTop="20dp"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:drawableStart="@drawable/lock"
-        android:drawablePadding="12dp"
-        android:padding="16dp"
-        android:textColor="@android:color/black"
-        android:textSize="16sp"/>
+        <!-- Email -->
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Email"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="12dp"
+            android:background="@android:color/transparent"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:inputType="textEmailAddress"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
 
-    <!-- create acc -->
-    <Button
-        android:id="@+id/login_button"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="Create Account"
-        android:textColor="@android:color/white"
-        android:backgroundTint="#35CC8C"
-        android:layout_below="@id/password_input"
-        android:layout_marginTop="40dp"
-        android:elevation="4dp"/>
+        <!-- Password -->
+        <EditText
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="12dp"
+            android:background="@android:color/transparent"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
 
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Create Account"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#fb6f92"
+            android:layout_below="@id/password_input"
+            android:layout_marginTop="40dp"
+            android:elevation="4dp"/>
+    </LinearLayout>
 
 </RelativeLayout>

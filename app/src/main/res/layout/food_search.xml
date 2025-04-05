@@ -15,7 +15,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Meal Name"
-        android:textAppearance="@style/meal" />
+        android:textAppearance="@style/meal"
+        android:textStyle="bold"
+        android:textSize="19sp" />
 
     <ImageView
         android:id="@+id/clock_meal"
@@ -33,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/meal_name"
         android:layout_marginStart="42dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="23dp"
         android:text="Meal Time"
         android:textAppearance="@style/time"/>
 

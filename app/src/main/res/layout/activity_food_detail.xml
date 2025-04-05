@@ -1,20 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:background="#FFF8F9"
+    android:padding="24dp">
 
     <!-- back button -->
     <ImageButton
         android:id="@+id/back_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:src="@drawable/ic_back"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="Back"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="16dp" />
+        android:layout_marginTop="36dp" />
 
     <!-- food name -->
     <TextView
@@ -22,66 +21,78 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/back_button"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:text="Food Name"
-        android:textSize="24sp"
+        android:textSize="26sp"
         android:textStyle="bold"
-        android:textColor="#000000" />
+        android:textColor="#FB6F92" />
 
-    <!-- calories -->
-    <TextView
-        android:id="@+id/caloriesTextView"
-        android:layout_width="wrap_content"
+    <!-- Info card container -->
+    <LinearLayout
+        android:id="@+id/nutritionCard"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/foodNameTextView"
-        android:layout_marginTop="16dp"
-        android:text="Calories: 200 kcal"
-        android:textSize="18sp"
-        android:textColor="#333333" />
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#FFFFFF"
+        android:elevation="6dp"
+        android:layout_marginBottom="32dp">
 
-    <!-- proteins -->
-    <TextView
-        android:id="@+id/proteinsTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/caloriesTextView"
-        android:layout_marginTop="8dp"
-        android:text="Proteins: 10 g"
-        android:textSize="18sp"
-        android:textColor="#333333" />
+        <!-- calories -->
+        <TextView
+            android:id="@+id/caloriesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories: 200 kcal"
+            android:textSize="18sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="12dp" />
 
-    <!-- carbs -->
-    <TextView
-        android:id="@+id/carbsTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/proteinsTextView"
-        android:layout_marginTop="8dp"
-        android:text="Carbohydrates: 20 g"
-        android:textSize="18sp"
-        android:textColor="#333333" />
+        <!-- proteins -->
+        <TextView
+            android:id="@+id/proteinsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proteins: 10 g"
+            android:textSize="18sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="12dp" />
 
-    <!-- fats -->
-    <TextView
-        android:id="@+id/fatsTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/carbsTextView"
-        android:layout_marginTop="8dp"
-        android:text="Fats: 15 g"
-        android:textSize="18sp"
-        android:textColor="#333333" />
+        <!-- carbs -->
+        <TextView
+            android:id="@+id/carbsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carbohydrates: 20 g"
+            android:textSize="18sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="12dp" />
 
-    <!-- save button -->
+        <!-- fats -->
+        <TextView
+            android:id="@+id/fatsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fats: 15 g"
+            android:textSize="18sp"
+            android:textColor="#444444" />
+    </LinearLayout>
+
+    <!-- Save button -->
     <Button
         android:id="@+id/saveFoodButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/fatsTextView"
-        android:layout_marginTop="150dp"
-        android:backgroundTint="#35CC8C"
-        android:padding="12dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FB6F92"
         android:text="Save to My Meals"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:elevation="8dp"
+        android:padding="12dp" />
 
 </RelativeLayout>

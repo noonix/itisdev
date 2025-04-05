@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:text="Reports"
             android:textStyle="bold"
-            android:textSize="18sp"
+            android:textSize="25sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -81,7 +81,7 @@
                 android:layout_gravity="end"
                 android:text="81.5 kg"
                 android:textSize="16sp"
-                android:textColor="#35CC8C"
+                android:textColor="#fb6f92"
                 android:layout_marginStart="16dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -116,7 +116,7 @@
                 android:layout_gravity="end"
                 android:text="82 kg"
                 android:textSize="16sp"
-                android:textColor="#35CC8C"
+                android:textColor="#fb6f92"
                 android:layout_marginStart="16dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -151,7 +151,7 @@
                 android:layout_gravity="end"
                 android:text="83.5 kg"
                 android:textSize="16sp"
-                android:textColor="#35CC8C"
+                android:textColor="#fb6f92"
                 android:layout_marginStart="16dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -186,7 +186,7 @@
                 android:layout_gravity="end"
                 android:text="89.3 kg"
                 android:textSize="16sp"
-                android:textColor="#35CC8C"
+                android:textColor="#fb6f92"
                 android:layout_marginStart="16dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -221,7 +221,7 @@
                 android:layout_gravity="end"
                 android:text="91 kg"
                 android:textSize="16sp"
-                android:textColor="#35CC8C"
+                android:textColor="#fb6f92"
                 android:layout_marginStart="16dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
