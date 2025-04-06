@@ -58,7 +58,7 @@ public class GenderActivity extends AppCompatActivity {
                 saveSelectedGender("Female");
 
                 if (currentToast != null) currentToast.cancel();
-                currentToast = Toast.makeText(GenderActivity.this, "Selected: Male", Toast.LENGTH_SHORT);
+                currentToast = Toast.makeText(GenderActivity.this, "Selected: Female", Toast.LENGTH_SHORT);
                 currentToast.show();
             }
         });
@@ -85,15 +85,14 @@ public class GenderActivity extends AppCompatActivity {
     }
 
     private void selectGenderOption(TextView selectedOptionView) {
-        maleText.setBackgroundResource(R.drawable.bg_male);
-        femaleText.setBackgroundResource(R.drawable.bg_female);
+        maleText.setBackgroundResource(R.drawable.bg_green);
+        femaleText.setBackgroundResource(R.drawable.bg_pink);
 
         if (selectedOptionView == maleText) {
-            selectedOptionView.setBackgroundResource(R.drawable.bg_male_selected);
+            selectedOptionView.setBackgroundResource(R.drawable.bg_green_selected);
         } else if (selectedOptionView == femaleText) {
-            selectedOptionView.setBackgroundResource(R.drawable.bg_female_selected);
+            selectedOptionView.setBackgroundResource(R.drawable.bg_pink_selected);
         }
-
     }
 
     private void saveSelectedGender(String gender) {

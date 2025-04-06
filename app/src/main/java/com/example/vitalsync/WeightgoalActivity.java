@@ -96,16 +96,16 @@ public class WeightgoalActivity extends AppCompatActivity {
     }
 
     private void selectWeightOption(TextView selectedOptionView) {
-        loseWeightText.setBackgroundResource(R.drawable.bg_lose_weight);
-        keepWeightText.setBackgroundResource(R.drawable.bg_keep_weight);
-        gainWeightText.setBackgroundResource(R.drawable.bg_gain_weight);
+        loseWeightText.setBackgroundResource(R.drawable.bg_pink);
+        keepWeightText.setBackgroundResource(R.drawable.bg_yellow);
+        gainWeightText.setBackgroundResource(R.drawable.bg_green);
 
         if (selectedOptionView == loseWeightText) {
-            selectedOptionView.setBackgroundResource(R.drawable.bg_lose_weight_selected);
+            selectedOptionView.setBackgroundResource(R.drawable.bg_pink_selected);
         } else if (selectedOptionView == keepWeightText) {
-            selectedOptionView.setBackgroundResource(R.drawable.bg_keep_weight_selected);
+            selectedOptionView.setBackgroundResource(R.drawable.bg_yellow_selected);
         } else if (selectedOptionView == gainWeightText) {
-            selectedOptionView.setBackgroundResource(R.drawable.bg_gain_weight_selected);
+            selectedOptionView.setBackgroundResource(R.drawable.bg_green_selected);
         }
 
         selectedOption = selectedOptionView;
