@@ -23,6 +23,7 @@ public class WeightgoalActivity extends AppCompatActivity {
     private ImageButton proceedButton;
     private TextView backTextView;
     private TextView selectedOption = null;
+    private Toast currentToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +44,10 @@ public class WeightgoalActivity extends AppCompatActivity {
             public void onClick(View v) {
                 selectWeightOption(loseWeightText);
                 saveSelectedWeightGoal("Lose Weight");
-                Toast.makeText(WeightgoalActivity.this, "Selected: Lose Weight", Toast.LENGTH_SHORT).show();
+
+                if (currentToast != null) currentToast.cancel();
+                currentToast = Toast.makeText(WeightgoalActivity.this, "Selected: Lose Weight", Toast.LENGTH_SHORT);
+                currentToast.show();
             }
         });
 
@@ -52,7 +56,10 @@ public class WeightgoalActivity extends AppCompatActivity {
             public void onClick(View v) {
                 selectWeightOption(keepWeightText);
                 saveSelectedWeightGoal("Keep Weight");
-                Toast.makeText(WeightgoalActivity.this, "Selected: Keep Weight", Toast.LENGTH_SHORT).show();
+
+                if (currentToast != null) currentToast.cancel();
+                currentToast = Toast.makeText(WeightgoalActivity.this, "Selected: Keep Weight", Toast.LENGTH_SHORT);
+                currentToast.show();
             }
         });
 
@@ -61,7 +68,10 @@ public class WeightgoalActivity extends AppCompatActivity {
             public void onClick(View v) {
                 selectWeightOption(gainWeightText);
                 saveSelectedWeightGoal("Gain Weight");
-                Toast.makeText(WeightgoalActivity.this, "Selected: Gain Weight", Toast.LENGTH_SHORT).show();
+
+                if (currentToast != null) currentToast.cancel();
+                currentToast = Toast.makeText(WeightgoalActivity.this, "Selected: Gain Weight", Toast.LENGTH_SHORT);
+                currentToast.show();
             }
         });
 
@@ -86,11 +96,18 @@ public class WeightgoalActivity extends AppCompatActivity {
     }
 
     private void selectWeightOption(TextView selectedOptionView) {
-        loseWeightText.setBackgroundResource(android.R.color.transparent);
-        keepWeightText.setBackgroundResource(android.R.color.transparent);
-        gainWeightText.setBackgroundResource(android.R.color.transparent);
+        loseWeightText.setBackgroundResource(R.drawable.bg_lose_weight);
+        keepWeightText.setBackgroundResource(R.drawable.bg_keep_weight);
+        gainWeightText.setBackgroundResource(R.drawable.bg_gain_weight);
 
-        selectedOptionView.setBackgroundResource(R.drawable.outline);
+        if (selectedOptionView == loseWeightText) {
+            selectedOptionView.setBackgroundResource(R.drawable.bg_lose_weight_selected);
+        } else if (selectedOptionView == keepWeightText) {
+            selectedOptionView.setBackgroundResource(R.drawable.bg_keep_weight_selected);
+        } else if (selectedOptionView == gainWeightText) {
+            selectedOptionView.setBackgroundResource(R.drawable.bg_gain_weight_selected);
+        }
+
         selectedOption = selectedOptionView;
     }
 

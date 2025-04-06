@@ -21,6 +21,8 @@ public class GenderActivity extends AppCompatActivity {
     private TextView backText;
     private String selectedGender = null;
 
+    private Toast currentToast;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -41,7 +43,10 @@ public class GenderActivity extends AppCompatActivity {
                 selectedGender = "Male";
                 selectGenderOption(maleText);
                 saveSelectedGender("Male");
-                Toast.makeText(GenderActivity.this, "Selected: Male", Toast.LENGTH_SHORT).show();
+
+                if (currentToast != null) currentToast.cancel();
+                currentToast = Toast.makeText(GenderActivity.this, "Selected: Male", Toast.LENGTH_SHORT);
+                currentToast.show();
             }
         });
 
@@ -51,7 +56,10 @@ public class GenderActivity extends AppCompatActivity {
                 selectedGender = "Female";
                 selectGenderOption(femaleText);
                 saveSelectedGender("Female");
-                Toast.makeText(GenderActivity.this, "Selected: Female", Toast.LENGTH_SHORT).show();
+
+                if (currentToast != null) currentToast.cancel();
+                currentToast = Toast.makeText(GenderActivity.this, "Selected: Male", Toast.LENGTH_SHORT);
+                currentToast.show();
             }
         });
 
@@ -76,10 +84,16 @@ public class GenderActivity extends AppCompatActivity {
         });
     }
 
-    private void selectGenderOption(TextView selectedOption) {
-        maleText.setBackgroundResource(android.R.color.transparent);
-        femaleText.setBackgroundResource(android.R.color.transparent);
-        selectedOption.setBackgroundResource(R.drawable.outline);
+    private void selectGenderOption(TextView selectedOptionView) {
+        maleText.setBackgroundResource(R.drawable.bg_male);
+        femaleText.setBackgroundResource(R.drawable.bg_female);
+
+        if (selectedOptionView == maleText) {
+            selectedOptionView.setBackgroundResource(R.drawable.bg_male_selected);
+        } else if (selectedOptionView == femaleText) {
+            selectedOptionView.setBackgroundResource(R.drawable.bg_female_selected);
+        }
+
     }
 
     private void saveSelectedGender(String gender) {
