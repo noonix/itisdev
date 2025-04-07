@@ -22,6 +22,8 @@ public class ActivenessActivity extends AppCompatActivity {
     private TextView backText;
     private String selectedActivityLevel = null;
 
+    private Toast currentToast;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         EdgeToEdge.enable(this);
@@ -43,7 +45,10 @@ public class ActivenessActivity extends AppCompatActivity {
                 selectActivityLevel(sedentaryText);
                 selectedActivityLevel = "Sedentary";
                 saveSelectedActivityLevel("Sedentary");
-                Toast.makeText(ActivenessActivity.this, "Selected: Sedentary", Toast.LENGTH_SHORT).show();
+
+                if (currentToast != null) currentToast.cancel();
+                currentToast = Toast.makeText(ActivenessActivity.this, "Selected: Sedentary", Toast.LENGTH_SHORT);
+                currentToast.show();
             }
         });
 
@@ -53,7 +58,10 @@ public class ActivenessActivity extends AppCompatActivity {
                 selectActivityLevel(lowActiveText);
                 selectedActivityLevel = "Low Active";
                 saveSelectedActivityLevel("Low Active");
-                Toast.makeText(ActivenessActivity.this, "Selected: Low Active", Toast.LENGTH_SHORT).show();
+
+                if (currentToast != null) currentToast.cancel();
+                currentToast = Toast.makeText(ActivenessActivity.this, "Selected: Low Active", Toast.LENGTH_SHORT);
+                currentToast.show();
             }
         });
 
@@ -63,7 +71,10 @@ public class ActivenessActivity extends AppCompatActivity {
                 selectActivityLevel(activeText);
                 selectedActivityLevel = "Active";
                 saveSelectedActivityLevel("Active");
-                Toast.makeText(ActivenessActivity.this, "Selected: Active", Toast.LENGTH_SHORT).show();
+
+                if (currentToast != null) currentToast.cancel();
+                currentToast = Toast.makeText(ActivenessActivity.this, "Selected: Active", Toast.LENGTH_SHORT);
+                currentToast.show();
             }
         });
 
@@ -73,7 +84,10 @@ public class ActivenessActivity extends AppCompatActivity {
                 selectActivityLevel(veryActiveText);
                 selectedActivityLevel = "Very Active";
                 saveSelectedActivityLevel("Very Active");
-                Toast.makeText(ActivenessActivity.this, "Selected: Very Active", Toast.LENGTH_SHORT).show();
+
+                if (currentToast != null) currentToast.cancel();
+                currentToast = Toast.makeText(ActivenessActivity.this, "Selected: Very Active", Toast.LENGTH_SHORT);
+                currentToast.show();
             }
         });
 
@@ -99,12 +113,20 @@ public class ActivenessActivity extends AppCompatActivity {
     }
 
     private void selectActivityLevel(TextView selectedButton) {
-        sedentaryText.setBackgroundResource(android.R.color.transparent);
-        lowActiveText.setBackgroundResource(android.R.color.transparent);
-        activeText.setBackgroundResource(android.R.color.transparent);
-        veryActiveText.setBackgroundResource(android.R.color.transparent);
+        sedentaryText.setBackgroundResource(R.drawable.bg_pink);
+        lowActiveText.setBackgroundResource(R.drawable.bg_yellow);
+        activeText.setBackgroundResource(R.drawable.bg_green);
+        veryActiveText.setBackgroundResource(R.drawable.bg_pale_green);
 
-        selectedButton.setBackgroundResource(R.drawable.outline);
+        if (selectedButton == sedentaryText) {
+            selectedButton.setBackgroundResource(R.drawable.bg_pink_selected);
+        } else if (selectedButton == lowActiveText) {
+            selectedButton.setBackgroundResource(R.drawable.bg_yellow_selected);
+        } else if (selectedButton == activeText) {
+            selectedButton.setBackgroundResource(R.drawable.bg_green_selected);
+        } else if (selectedButton == veryActiveText) {
+            selectedButton.setBackgroundResource(R.drawable.bg_pale_green_selected);
+        }
     }
 
     private void saveSelectedActivityLevel(String activityLevel) {
