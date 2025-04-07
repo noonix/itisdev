@@ -1,9 +1,8 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFF8F5">
 
     <!-- title -->
     <TextView
@@ -49,7 +48,7 @@
         android:layout_marginBottom="362dp"
         android:gravity="center"
         android:inputType="numberDecimal"
-        android:textColor="#000000"
+        android:textColor="#2b2d42"
         android:textSize="18sp" />
     <!-- toggle button kg/lbs -->
     <TextView
@@ -63,7 +62,7 @@
         android:focusable="true"
         android:padding="5dp"
         android:text="kg"
-        android:textColor="#1d2d44"
+        android:textColor="#2b2d42"
         android:textSize="18sp" />
 
     <TextView
@@ -89,9 +88,9 @@
         android:layout_marginEnd="33dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/ellipse"
+        android:contentDescription="Proceed"
         android:elevation="6dp"
-        android:src="@drawable/next_arrow"
-        android:contentDescription="Proceed" />
+        android:src="@drawable/next_arrow" />
 
     <!-- Logo -->
     <ImageView
@@ -101,8 +100,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
-        app:srcCompat="@drawable/nutritrack"
-        android:contentDescription="NutriTrack Logo" />
+        android:contentDescription="NutriTrack Logo"
+        app:srcCompat="@drawable/nutritrack" />
 
 
 </RelativeLayout>

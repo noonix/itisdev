@@ -61,54 +61,56 @@
             android:id="@+id/female_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:background="@drawable/bg_pink"
-            android:text="Female"
-            android:textColor="#2b2d42"
-            android:textSize="18sp"
-            android:fontFamily="sans-serif-medium"
+            android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="8dp"
+            android:background="@drawable/bg_pink"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
             android:paddingVertical="14dp"
-            android:layout_marginHorizontal="16dp" />
+            android:text="Female"
+            android:textColor="#1b263b"
+            android:textSize="18sp" />
     </LinearLayout>
 
     <!-- Back Button -->
     <!-- Back Button -->
+
+    <!-- Proceed Button -->
+
+    <!-- Logo -->
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="87dp"
         android:padding="5dp"
         android:text="Back"
         android:textColor="#4a5759"
         android:textSize="16sp" />
 
-    <!-- Proceed Button -->
     <ImageButton
         android:id="@+id/proceed_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="33dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="80dp"
         android:background="@drawable/ellipse"
+        android:contentDescription="Proceed"
         android:elevation="6dp"
-        android:src="@drawable/next_arrow"
-        android:contentDescription="Proceed" />
+        android:src="@drawable/next_arrow" />
 
-    <!-- Logo -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        app:srcCompat="@drawable/nutritrack"
-        android:contentDescription="NutriTrack Logo" />
+        android:layout_marginBottom="54dp"
+        android:contentDescription="NutriTrack Logo"
+        app:srcCompat="@drawable/nutritrack" />
 </RelativeLayout>

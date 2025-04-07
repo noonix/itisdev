@@ -1,9 +1,8 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:id="@+id/main">
+    android:background="#FFF8F5">
 
     <!-- logo -->
     <ImageView
@@ -13,57 +12,57 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="150dp"
         android:contentDescription="App Logo"
-        android:src="@drawable/nutritrack"/>
+        android:src="@drawable/nutritrack" />
 
     <!-- welcome text -->
     <TextView
         android:id="@+id/welcome_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        android:fontFamily="sans-serif-medium"
         android:layout_below="@id/apple_logo"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"/>
+        android:fontFamily="sans-serif-medium"
+        android:text="Welcome"
+        android:textColor="#2b2d42"
+        android:textSize="24sp" />
 
     <!-- subtext -->
     <TextView
         android:id="@+id/welcome_subtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start or sign in to your account"
-        android:textColor="#808080"
-        android:textSize="16sp"
         android:layout_below="@id/welcome_text"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"/>
+        android:text="Start or sign in to your account"
+        android:textColor="#4a5759"
+        android:textSize="16sp" />
 
     <!-- start button -->
     <Button
         android:id="@+id/start_button"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:text="Start"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#fb6f92"
         android:layout_below="@id/welcome_subtext"
-        android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
-        android:elevation="4dp"/>
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#EDAFB8"
+        android:elevation="4dp"
+        android:text="Start"
+        android:textColor="#2b2d42" />
 
     <!-- sign in link -->
     <TextView
         android:id="@+id/sign_in_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already have an account? Sign In"
-        android:textColor="#1d2d44"
-        android:textSize="14sp"
         android:layout_below="@id/start_button"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true" />
+        android:text="Already have an account? Sign In"
+        android:textColor="#4a5759"
+        android:textSize="14sp" />
 
 
 </RelativeLayout>
