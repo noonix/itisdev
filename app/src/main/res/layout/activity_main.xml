@@ -50,7 +50,8 @@
         android:backgroundTint="#EDAFB8"
         android:elevation="4dp"
         android:text="Start"
-        android:textColor="#2b2d42" />
+        android:textColor="#2b2d42"
+        android:textSize="18sp" />
 
     <!-- sign in link -->
     <TextView

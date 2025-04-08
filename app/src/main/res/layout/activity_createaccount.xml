@@ -88,12 +88,13 @@
             android:id="@+id/login_button"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Create Account"
-            android:textColor="@android:color/white"
-            android:backgroundTint="#fb6f92"
             android:layout_below="@id/password_input"
             android:layout_marginTop="40dp"
-            android:elevation="4dp"/>
+            android:backgroundTint="#EDAFB8"
+            android:elevation="4dp"
+            android:text="Create Account"
+            android:textColor="#2B2D42"
+            android:textSize="18sp" />
     </LinearLayout>
 
 </RelativeLayout>
