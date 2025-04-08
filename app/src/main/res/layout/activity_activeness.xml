@@ -132,7 +132,7 @@
         android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="98dp"
+        android:layout_marginBottom="54dp"
         android:contentDescription="NutriTrack Logo"
         app:srcCompat="@drawable/nutritrack" />
 </RelativeLayout>
