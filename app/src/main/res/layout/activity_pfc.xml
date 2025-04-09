@@ -1,20 +1,19 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFF8F5">
 
     <!-- title -->
     <TextView
         android:id="@+id/recommended_pfc_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-medium"
         android:text="Recommended PFC"
-        android:textSize="24sp"
         android:textColor="#000000"
-        android:fontFamily="sans-serif-medium" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/pfc_subtitle"
@@ -161,14 +160,14 @@
 
     <TextView
         android:id="@+id/back_button"
-        android:textColor="#0d1321"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="38dp"
-        android:layout_marginBottom="75dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="87dp"
         android:padding="5dp"
-        android:text="Back" />
+        android:text="Back"
+        android:textColor="#0d1321" />
 
 </RelativeLayout>
