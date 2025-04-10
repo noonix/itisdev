@@ -24,8 +24,9 @@
         android:layout_marginTop="32dp"
         android:fontFamily="sans-serif-medium"
         android:text="Food Name"
-        android:textColor="#2b2d42"
-        android:textColor="#EDAFB8" />
+        android:textColor="#EDAFB8"
+        android:textSize="26sp"
+        android:textStyle="bold" />
 
     <!-- Info card container -->
     <LinearLayout
