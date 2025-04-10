@@ -35,8 +35,8 @@
             android:inputType="textCapWords"
             android:text="Meal #1"
             android:textAlignment="center"
-            android:textSize="18sp" />
-
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <!-- add -->
         <ImageButton
@@ -185,14 +185,15 @@
     <!-- save button -->
     <Button
         android:id="@+id/saveButton"
-        android:layout_width="match_parent"
+        android:layout_width="258dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="75dp"
         android:backgroundTint="#EDAFB8"
         android:fontFamily="sans-serif-medium"
         android:text="Save"
         android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
 
 </LinearLayout>
