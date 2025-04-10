@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAF9F6"
+    android:background="#FFF8F9"
     android:padding="20dp">
 
     <!-- Back Button -->
@@ -9,43 +9,45 @@
         android:id="@+id/back_button"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/ic_back"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="Back"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="36dp" />
+        android:src="@drawable/ic_back" />
 
     <!-- Search Bar -->
     <EditText
         android:id="@+id/searchEditText"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_toEndOf="@id/back_button"
         android:layout_alignTop="@id/back_button"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toEndOf="@id/back_button"
+        android:background="@android:color/white"
+        android:elevation="6dp"
+        android:fontFamily="sans-serif-medium"
         android:hint="Search food..."
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:background="@android:color/white"
-        android:elevation="6dp"
         android:textColor="#333333"
-        android:textColorHint="#B9B9B9"
-        android:textSize="16sp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="12dp" />
+        android:textColorHint="#DEDBD2"
+        android:textSize="16sp" />
 
     <!-- Placeholder Text When No Search Results -->
     <TextView
         android:id="@+id/emptyTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Find a Food"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="#A0A0A0"
         android:layout_centerInParent="true"
-        android:gravity="center" />
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Find a Food"
+        android:textColor="#B0C4B1"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <!-- Food RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView

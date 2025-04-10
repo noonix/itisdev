@@ -1,8 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#FFFFFF">
+    android:background="#FFF8F5">
 
     <!-- how tall are you -->
     <TextView
@@ -15,7 +15,7 @@
         android:layout_marginEnd="95dp"
         android:fontFamily="@font/poppins_bold"
         android:text="How tall are you?"
-        android:textColor="#000000"
+        android:textColor="#1b263b"
         android:textSize="24sp" />
     <!-- subtext -->
     <TextView
@@ -38,7 +38,7 @@
         android:layout_below="@id/subtext"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="Switch to Imperial"/>
+        android:text="Switch to Imperial" />
 
     <!-- measurement -->
     <NumberPicker
@@ -49,7 +49,7 @@
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="40dp" />
 
     <!-- m label -->
     <TextView
@@ -69,9 +69,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/unit_switch"
-        android:layout_toEndOf="@id/meter_label"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@id/meter_label" />
     <!-- cm label -->
     <TextView
         android:id="@+id/cm_label"
@@ -85,43 +85,45 @@
         android:textColor="#6b9080"
         android:textSize="18sp" />
     <!-- proceed -->
+
+    <!-- Proceed Button -->
+
+    <!-- Logo -->
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="87dp"
         android:padding="5dp"
         android:text="Back"
         android:textColor="#4a5759"
         android:textSize="16sp" />
 
-    <!-- Proceed Button -->
     <ImageButton
         android:id="@+id/proceed_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="33dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="80dp"
         android:background="@drawable/ellipse"
+        android:contentDescription="Proceed"
         android:elevation="6dp"
-        android:src="@drawable/next_arrow"
-        android:contentDescription="Proceed" />
+        android:src="@drawable/next_arrow" />
 
-    <!-- Logo -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        app:srcCompat="@drawable/nutritrack"
-        android:contentDescription="NutriTrack Logo" />
+        android:layout_marginBottom="54dp"
+        android:contentDescription="NutriTrack Logo"
+        app:srcCompat="@drawable/nutritrack" />
 
 
 </RelativeLayout>

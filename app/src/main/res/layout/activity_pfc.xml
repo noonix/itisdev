@@ -1,20 +1,19 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFF8F5">
 
     <!-- title -->
     <TextView
         android:id="@+id/recommended_pfc_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-medium"
         android:text="Recommended PFC"
-        android:textSize="24sp"
-        android:textColor="#000000"
-        android:fontFamily="sans-serif-medium" />
+        android:textColor="#2b2d42"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/pfc_subtitle"
@@ -25,7 +24,7 @@
         android:layout_marginTop="10dp"
         android:text="You can always change PFC in the profile"
         android:textAlignment="center"
-        android:textColor="#7A7A7A"
+        android:textColor="#4a5759"
         android:textSize="14sp" />
 
     <!-- proteins -->
@@ -36,11 +35,11 @@
         android:layout_below="@id/pfc_subtitle"
         android:layout_marginStart="40dp"
         android:layout_marginTop="57dp"
-        android:backgroundTint="#3e5c76"
+        android:backgroundTint="#EDAFB8"
         android:paddingHorizontal="20dp"
         android:paddingVertical="10dp"
         android:text="Proteins: 225g"
-        android:textColor="#FFFFFF"
+        android:textColor="#2b2d42"
         android:textSize="16sp" />
 
     <!-- fats -->
@@ -52,11 +51,11 @@
         android:layout_marginStart="19dp"
         android:layout_marginTop="57dp"
         android:layout_toEndOf="@id/proteins_button"
-        android:backgroundTint="#3e5c76"
+        android:backgroundTint="#FBC9A6"
         android:paddingHorizontal="20dp"
         android:paddingVertical="10dp"
         android:text="Fats: 118g"
-        android:textColor="#FFFFFF"
+        android:textColor="#2b2d42"
         android:textSize="16sp" />
 
     <!-- carbs -->
@@ -67,11 +66,11 @@
         android:layout_below="@id/proteins_button"
         android:layout_marginStart="40dp"
         android:layout_marginTop="18dp"
-        android:backgroundTint="#3e5c76"
+        android:backgroundTint="#B0C4B1"
         android:paddingHorizontal="20dp"
         android:paddingVertical="10dp"
         android:text="Carbs: 340g"
-        android:textColor="#FFFFFF"
+        android:textColor="#2b2d42"
         android:textSize="16sp" />
 
     <!-- carloies -->
@@ -83,11 +82,11 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
         android:layout_toEndOf="@id/carbs_button"
-        android:backgroundTint="#3e5c76"
+        android:backgroundTint="#DEDBD2"
         android:paddingHorizontal="20dp"
         android:paddingVertical="10dp"
         android:text="Calories: 3400"
-        android:textColor="#FFFFFF"
+        android:textColor="#2b2d42"
         android:textSize="16sp" />
 
     <!-- continue with google -->
@@ -161,14 +160,14 @@
 
     <TextView
         android:id="@+id/back_button"
-        android:textColor="#0d1321"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="38dp"
-        android:layout_marginBottom="75dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="87dp"
         android:padding="5dp"
-        android:text="Back" />
+        android:text="Back"
+        android:textColor="#0d1321" />
 
 </RelativeLayout>

@@ -228,25 +228,39 @@ public class PedometerFragment extends Fragment implements SensorEventListener {
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        if (isWalking) {
-            if (event.sensor.getType() == Sensor.TYPE_STEP_COUNTER) {
-                int totalSteps = (int) event.values[0];
+        if (!isWalking) return;
 
-                if (stepCount == 0) {
-                    stepCount = totalSteps;
-                } else {
-                    stepCount += (totalSteps - stepCount);
-                }
-                updateStepCount();
-            } else if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
-                // Shake detection based on accelerometer (only if walking)
-                float x = event.values[0];
-                float y = event.values[1];
-                float z = event.values[2];
-                detectShake(x, y, z);
+        if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
+            float x = event.values[0];
+            float y = event.values[1];
+            float z = event.values[2];
+
+            float acceleration = (float) Math.sqrt(x * x + y * y + z * z);
+
+            if (isFirstShake) {
+                lastX = x;
+                lastY = y;
+                lastZ = z;
+                isFirstShake = false;
+                return;
             }
+
+            float deltaX = x - lastX;
+            float deltaY = y - lastY;
+            float deltaZ = z - lastZ;
+            float delta = (float) Math.sqrt(deltaX * deltaX + deltaY * deltaY + deltaZ * deltaZ);
+
+            if (delta > accelerationThreshold) {
+                stepCount++;
+                updateStepCount();
+            }
+
+            lastX = x;
+            lastY = y;
+            lastZ = z;
         }
     }
+
 
 
     private void detectShake(float x, float y, float z) {

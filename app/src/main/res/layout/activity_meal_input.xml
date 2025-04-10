@@ -2,15 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF8F5"
     android:orientation="vertical"
     android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
         android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
         android:paddingBottom="16dp">
 
         <!-- close -->
@@ -18,9 +19,9 @@
             android:id="@+id/close_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/close"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="Close" />
+            android:contentDescription="Close"
+            android:src="@drawable/close" />
 
         <!-- title -->
         <EditText
@@ -29,6 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@null"
+            android:fontFamily="sans-serif-medium"
             android:hint="Enter meal title"
             android:inputType="textCapWords"
             android:text="Meal #1"
@@ -36,15 +38,14 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-
         <!-- add -->
         <ImageButton
             android:id="@+id/add_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/plus"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="Add" />
+            android:contentDescription="Add"
+            android:src="@drawable/plus" />
     </LinearLayout>
 
     <!-- summary -->
@@ -52,14 +53,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="4"
-        android:paddingBottom="1dp">
+        android:paddingBottom="1dp"
+        android:weightSum="4">
 
         <TextView
             android:id="@+id/caloriesText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
             android:text="416"
             android:textAlignment="center" />
 
@@ -69,6 +71,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
             android:text="20"
             android:textAlignment="center" />
 
@@ -77,6 +80,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
             android:text="15"
             android:textAlignment="center" />
 
@@ -85,41 +89,51 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
             android:text="15"
             android:textAlignment="center" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="4"
-        android:paddingBottom="16dp">
+        android:paddingBottom="16dp"
+        android:weightSum="4">
+
         <TextView
             android:id="@+id/caloriesTextLabel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
             android:text="Cal"
             android:textAlignment="center" />
+
         <TextView
             android:id="@+id/proteinsTextLabel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
             android:text="g Protein"
             android:textAlignment="center" />
+
         <TextView
             android:id="@+id/fatsTextLabel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
             android:text="g Fat"
             android:textAlignment="center" />
+
         <TextView
             android:id="@+id/carbsTextLabel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
             android:text="g Carbs"
             android:textAlignment="center" />
     </LinearLayout>
@@ -134,24 +148,28 @@
             android:id="@+id/radioCalories"
             android:layout_width="103dp"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
             android:text="Calories" />
 
         <RadioButton
             android:id="@+id/radioProtein"
             android:layout_width="103dp"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
             android:text="Proteins" />
 
         <RadioButton
             android:id="@+id/radioFats"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
             android:text="Fats" />
 
         <RadioButton
             android:id="@+id/radioCarbs"
             android:layout_width="91dp"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
             android:text="Carbs" />
     </RadioGroup>
 
@@ -172,7 +190,8 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="75dp"
-        android:backgroundTint="#fb6f92"
+        android:backgroundTint="#EDAFB8"
+        android:fontFamily="sans-serif-medium"
         android:text="Save"
         android:textColor="#FFFFFF"
         android:textSize="16sp" />

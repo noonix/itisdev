@@ -13,38 +13,40 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="411dp"
-        android:layout_height="69dp">
+        android:layout_height="69dp"
+        android:background="#FFF8F5">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="20dp"
+            android:background="#FFF8F5">
 
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_height="30dp"
                 android:layout_width="wrap_content"
+                android:layout_height="30dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:fontFamily="@font/poppins_bold"
+                android:fontFamily="sans-serif-medium"
                 android:lineSpacingExtra="25sp"
                 android:text="Profile"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="#2B2D42"
                 android:textSize="20sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.496"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.592"
-                tools:ignore="HardcodedText"
-                />
+                tools:ignore="HardcodedText" />
 
             <ImageButton
                 android:id="@+id/backbutton2"
@@ -75,18 +77,20 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="340dp">
+            android:layout_height="340dp"
+            android:background="#FFF8F5">
 
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="277dp"
                 android:layout_height="36dp"
-                android:fontFamily="@font/poppins_bold"
+                android:fontFamily="sans-serif-medium"
                 android:text="user"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textSize="20sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -97,6 +101,7 @@
                 android:id="@+id/textView4"
                 android:layout_width="276dp"
                 android:layout_height="51dp"
+                android:fontFamily="sans-serif-medium"
                 android:text="user@email.com"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -136,6 +141,7 @@
                     android:layout_marginTop="12dp"
                     android:layout_marginEnd="280dp"
                     android:layout_marginBottom="9dp"
+                    android:fontFamily="sans-serif-medium"
                     android:paddingTop="4dp"
                     android:text="Me"
                     android:textAlignment="center"
@@ -188,6 +194,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="220dp"
                     android:layout_marginBottom="16dp"
+                    android:fontFamily="sans-serif-medium"
                     android:text="Calorie Intake"
                     android:textStyle="bold" />
 
@@ -204,6 +211,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="12dp"
                     android:layout_marginBottom="14dp"
+                    android:fontFamily="sans-serif-medium"
                     android:text="3400 cal"
                     android:textColor="#1d2d44"
                     tools:ignore="TextContrastCheck" />
@@ -235,6 +243,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="248dp"
                     android:layout_marginBottom="13dp"
+                    android:fontFamily="sans-serif-medium"
                     android:text="Logout"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp"
@@ -258,7 +267,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FFFFFF">
+            android:background="#FFF8F5">
 
 
             <TextView
@@ -269,6 +278,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
+                android:fontFamily="sans-serif-medium"
                 android:text="version_0_0_1"
                 android:textAlignment="center"
                 android:textColor="@color/black"
