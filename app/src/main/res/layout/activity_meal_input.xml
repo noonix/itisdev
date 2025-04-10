@@ -28,12 +28,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@null"
+            android:hint="Enter meal title"
+            android:inputType="textCapWords"
             android:text="Meal #1"
             android:textAlignment="center"
             android:textSize="18sp"
-            android:hint="Enter meal title"
-            android:inputType="textCapWords"
-            android:background="@null"/>
+            android:textStyle="bold" />
 
 
         <!-- add -->
